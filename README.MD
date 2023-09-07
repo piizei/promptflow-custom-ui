@@ -12,3 +12,5 @@ Following env variables are needed to be configured:
 - URL=https://MYDEPLOYMENT.REGION.inference.ml.azure.com/score
 - KEY=APIKEYFORDEPLOYMENT
 - MODEL=MODELNAME
+
+If you run it locally, you can add a `.env` file with these values.
