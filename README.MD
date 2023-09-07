@@ -13,7 +13,13 @@ Following env variables are needed to be configured:
 - KEY=APIKEYFORDEPLOYMENT
 - MODEL=MODELNAME
 
-If you run it locally, you can add a `.env` file with these values.
+### Docker
+`docker run -d -t -i -e URL='https://MYDEPLOYMENT' -e KEY='MYAPIKEY' -e MODEL='my-model-name' -p 8501:8501 ghcr.io/piizei/promptflow-custom-ui:latest`
+
+After that, you can open browser to `http://localhost:8501` and you should see the chat ui.
+### Local
+
+You can add a `.env` file with these values.
 
 To run with streamlit, first do pip install (and preferably start virtual env) `pip install -r requirements.txt`
 and then run `streamlit run app.py`
