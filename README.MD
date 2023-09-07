@@ -14,3 +14,6 @@ Following env variables are needed to be configured:
 - MODEL=MODELNAME
 
 If you run it locally, you can add a `.env` file with these values.
+
+To run with streamlit, first do pip install (and preferably start virtual env) `pip install -r requirements.txt`
+and then run `streamlit run app.py`
